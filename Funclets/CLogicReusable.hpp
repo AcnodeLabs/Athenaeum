@@ -12,11 +12,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-static inline float skRandf() {
+static inline float xalRand() {
+ 
     return random() / (float) RAND_MAX;
 }
 
-static inline float skRand(float low, float high) {
-    return skRandf() * (high - low) + low;
+static inline float xalRandInRange(float low, float high) {
+    return xalRand() * (high - low) + low;
 }
 #endif /* CLogicReusable_hpp */
