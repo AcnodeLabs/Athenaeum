@@ -4,6 +4,7 @@
 #include "../../Base/CBaseV1_2.h"
 #include "../../Extensions/bullet-2.79/src/btBulletDynamicsCommon.h"
 
+//requires bullet3d
 
 btDynamicsWorld* dynamicsWorld;
 btAlignedObjectArray<btCollisionShape*> collisionShapes;
